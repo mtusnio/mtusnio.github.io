@@ -1,0 +1,156 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.content>.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    font-size: 1.85em;
+    color: rgb(45, 45, 45);
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+hr {
+    border-top: 1px solid #ebebeb;
+}
+
+.footnote {
+    margin-top: 25px;
+    color: #9A9D9A;
+}
+
+.icon-bar {
+    background-color: #46606B;
+}
+
+.project-header {
+    margin-top: 0px;
+}
+
+.project-images {
+    margin-bottom: 20px
+}
+
+.project-images img {
+    cursor: zoom-in;
+}
+
+.even {
+    background-color: #FAFAFA;
+}
+
+.odd {
+    background-color: #F0F0F0;
+}
+
+.project {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.fa-ul li {
+    margin-top: 5px;
+}
+
+.navbar-custom {
+    background-color: #98D2EB;
+}
+
+.navbar-custom li a {
+    color: #46606B;
+}
+
+.navbar-nav li a:focus {
+    background-color: inherit;
+}
+
+.navbar-nav li a:hover {
+    background-color: #BDE2F2;
+}
+
+.navbar-nav li.active {
+    background-color: #8BBFD6;
+}
+
+#links {
+    padding-left: 30px;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+    .project:first-of-type {
+        margin-top: 50px;
+    }
+    .project>div:first-of-type {
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #links {
+        padding-right: 30px;
+    }
+    .project {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .navbar-brand {
+        font-size: 2.25em;
+    }
+    .content {
+        font-size: 1.6em;
+    }
+    .navbar-nav li {
+        font-size: 2em;
+    }
+    hr {
+        margin-top: 25px;
+    }
+    .modal-body object p {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        padding-left: 25%;
+    }
+    .navbar li {
+        font-size: 1.25em
+    }
+    .project {
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+    hr {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+}

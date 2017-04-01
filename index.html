@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Michał Tuśnio</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/7599ac8ac6.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog"
+    aria-labelledby="enlargeImageModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#about">Michał Tuśnio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li id="webdev-menu">
+                        <a href="#webdev">WebDev</a>
+                    </li>
+                    <li id="embedded-menu">
+                        <a href="#embedded">Embedded</a>
+                    </li>
+                    <li id="gamedev-menu">
+                        <a href="#gamedev">Game development</a>
+                    </li>
+                    <li id="modding-menu">
+                        <a href="#modding">Modding</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row even project" id="about">
+                <div class="col-xs-3" id="links">
+                    <h2 class="text-center">Links</h2>
+                    <a id="cv-button" class="btn btn-block btn-social
+                    btn-default btn-sm" src="files/cv.pdf">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>My
+                        CV</button>
+                        <a class="btn btn-block btn-social btn-github btn-sm"
+                        target="_blank" href="https://github.com/mtusnio">
+                            <i class="fa fa-github"></i> Github
+                        </a>
+                        <a class="btn btn-block btn-social btn-linkedin btn-sm"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/michał-tuśnio-a609a661/">
+                            <i class="fa fa-linkedin"></i> LinkedIn
+                        </a>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="text-center">About</h2>
+                    <p>Hello! I am a UK based DevOps engineer who's looking for
+                    ways to use tech to do social good, utilise it to to empower
+                    communities and, simply put, leave the world a better place.
+                    I'm also looking forward to seeing how we can bring worlds
+                    and stories to life using interactive mediums, particularly
+                    games and virtual reality.
+                    </p>
+                    <p>I have clocked 4+ years of experience as a software
+                    engineer, out of that I've worked in embedded development &
+                    automated testing of hardware for almost 2 years. Outside of
+                    that my roles have been a mix of of infrastructure work
+                    (heavily AWS centric), full-stack and building CI/CD
+                    pipelines. I love obscure shell commands, whales carrying
+                    containers and anything DevOps related. There's plenty of
+                    that & more in my CV!
+                    </p>
+                    <p>As you can tell from my projects I'm quite a devoted
+                    gamer with a few hobbyist gamedev projects under my belt.
+                    You might also find me at various meetups around London
+                    involving volunteering, board games or social tech (or,
+                    ideally, all 3!). Feel free to say hi if you ever run into
+                    me there!</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <hr/>
+                <div id="webdev">
+                    <div class="row project even">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">Visapp</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-default btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                target="_blank" href="https://visapp.uk">
+                                    <i class="fa fa-external-link"
+                                    aria-hidden="true"></i>Visit
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-3">
+                                <img src="images/visapp/image01.png"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-3">
+                                <img src="images/visapp/image02.png"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Holders of Tier 2 & Tier 5 visas in the UK
+                                can only access the list of potential sponsors
+                                by checking
+                                    <a target="_blank"
+                                    href="https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers">a
+                                    PDF on the Home Office's website</a>. This
+                                    makes it extremely difficult to find
+                                    companies within a specific industry,
+                                    location or field. Additionally, companies
+                                    themselves often do not know if they can
+                                    hire a non-EU national, meaning any job
+                                    advert needs to be cross referenced with the
+                                    sponsors list to double check if a Visa
+                                    holder can apply for it.
+                                </p>
+                                <p>
+                                    To fix this problem the application serves
+                                    the newest sponsors list in a table,
+                                    together with Company House info about the
+                                    sponsor's industry, as well as collects data
+                                    from online jobs boards to map them to
+                                    existing sponsors. The user can then filter
+                                    through the app's content by category,
+                                    location, company name and see what
+                                    positions are available at which companies.
+                                    In the future the website will act as a
+                                    one-stop shop for information about the
+                                    sponsorship process, timelines for
+                                    Indefinite Leave to Remain applications, and
+                                    generally how to obain a Visa in the UK -
+                                    all tailored to the user's situation based
+                                    on the data they provide.
+                                </p>
+                                <p>Built utilising serverless technologies - AWS
+                                Lambda, API Gateway, CloudFront - the app also
+                                uses EC2 for daily scraping of sponsors and
+                                jobs. Those are converted by a set of scripts to
+                                fuzzy match company names to sponsor names, then
+                                saved to S3 for archiving as well as pushed into
+                                an RDS. The whole setup was designed to take
+                                advantage of AWS Free Tier while providing
+                                scalable & highly available infrastructure.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>AWS | NodeJS | React</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div id="embedded">
+                    <div class="row project odd">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">LetMeCreateIoT</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/CreatorDev/LetMeCreateIoT">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-4">
+                                <img src="images/letmecreateiot/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/letmecreateiot/screen02.png"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>A spin-off of my colleague's
+                                    <a target="_blank"
+                                    href="https://github.com/CreatorDev/LetMeCreate">LetMeCreate</a>
+                                    library which he wrote as a set of wrappers
+                                    to communicate between
+                                    <a target="_blank"
+                                    href="https://creatordev.io/ci40-iot-hub.html">Imagination
+                                    Technologies' Ci40</a>
+                                    board and
+                                    <a target="_blank"
+                                    href="https://shop.mikroe.com/click">MikroElektronika's
+                                    click boards</a>. It included a set of Linux
+                                    C wrappers for common communication
+                                    protocols (for example I2C, SPI, GPIO) as
+                                    well as drivers for specific click
+                                    boards.</p>
+                                <p>LetMeCreateIoT was written with the idea of
+                                preserving LetMeCreate's API but implementing it
+                                for Contiki RTOS. The RTOS is then run on a
+                                constrained device based on the PIC32 system on
+                                chip. This way code could be prototyped on the
+                                Ci40 first, and then moved to Contiki with
+                                little to no changes. Similarly, writing click
+                                board drivers meant they were immediately
+                                available for both platforms. Prime example was
+                                my colleague's
+                                    <a target="_blank"
+                                    href="https://github.com/CreatorDev/LetMeCreate/blob/master/src/click/eve.c">
+                                        implementation of a display controller
+                                        board</a> that worked out of the box on
+                                        both platforms.
+                                </p>
+                                <p>On top of that the library provided wrappers
+                                for UDP/TCP communication as well as
+                                functionality to send live logs over the SoC's
+                                embedded low power radio. This meant the
+                                standard output was always easily available.
+                                Accessing it any other way was quite cumbersome
+                                since it required soldering wires and buying a
+                                dedicated UART board.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>Embedded C | Contiki | PIC32 SoC |
+                                    6LoWPAN</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row project even">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">IoT Carpark</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-youtube btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                src="https://www.youtube.com/embed/HeCg7sNAau4">
+                                    <i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i>Video
+                                </a>
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/carpark">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-4">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/carpark/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>A project that combines LetMeCreateIoT and
+                                    <a target="_blank"
+                                    href="https://github.com/FlowM2M/AwaLWM2M/">AwaLWM2M</a>
+                                    device management software. The aim was to
+                                    connect a constrained device to a cloud
+                                    server, and use LWM2M to communicate the
+                                    device's sensors' state. Since a motion
+                                    sensor was fitted on top of it, which
+                                    updated its status on the cloud whenever it
+                                    was trigged, we were able to react whenever
+                                    motion was detected.</p>
+                                <p>The project includes a NodeJS app that could
+                                be run side-by-side with an AwaLWM2M server,
+                                this way the webapp can use interprocess
+                                comunication to access all sensors' states. Then
+                                it displays dynamically which spaces are taken,
+                                with a free spot shown if there's no motion, and
+                                a car if motion is detected.</p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>Embedded C | Lightweight M2M | NodeJS</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row project odd">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h3>Contributions</h4>
+                            </div>
+                            <div class="col-xs-4">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <i class="fa-li fa fa-square"></i>A few
+                                        fixes, an SPI joystick driver, and extra
+                                        abstractions for
+                                        <a target="_blank"
+                                        href="https://github.com/CreatorDev/LetMeCreate/commits?author=mtusnio">
+                                            LetMeCreate</a> to allow for better
+                                            portability of driver code. Since we
+                                            were trying to ensure easy
+                                            portability of driver code any
+                                            hardware & OS differences required
+                                            hiding them away behind extra LMC
+                                            API calls, and limited the amount of
+                                            patches needed to port the driver
+                                            code. Additionally if we ever wanted
+                                            to migrate to a new OS (eg. RIOT) it
+                                            meant we already had a solid and
+                                            stable API to implement to make the
+                                            code portable.
+                                        <li>
+                                            <i class="fa-li fa
+                                            fa-square"></i>Various commits to
+                                            <a target="_blank"
+                                            href="https://github.com/FlowM2M/AwaLWM2M/commits?author=mtusnio">AwaLWM2M</a>,
+                                            mainly to make the Python API
+                                            compatible with both Python 2 and 3,
+                                            fixes to Contiki network abstraction
+                                            layer made to resolve issues with
+                                            caching of parsed addresses, and fix
+                                            ports not being consistently saved
+                                            in one endianness.</li>
+                                        <li>
+                                            <i class="fa-li fa
+                                            fa-square"></i>Changes submitted to
+                                            <a target="_blank"
+                                            href="https://github.com/CreatorDev/contiki/commits?author=mtusnio">CreatorDev
+                                            fork of Contiki RTOS</a> to fix
+                                            Makefile issues, clean up and add
+                                            missing functionality to I2C, and
+                                            add a driver to handle multiple
+                                            callbacks for the CN interrupt.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr/>
+                <div id="gamedev">
+                    <div class="row project even">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">Graphics Engine</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-youtube btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                src="https://www.youtube.com/embed/0teB4AyHKs0">
+                                    <i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i>Video
+                                </a>
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/graphicsengine">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-4">
+                                <img src="images/graphicsengine/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/graphicsengine/screen02.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/graphicsengine/screen03.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>A fun side project I used to play around with
+                                3D graphics - using OpenGL's rendering
+                                pipelines, writing shaders and handling
+                                lighting. The goal was to learn more about 3D
+                                math for graphics programming as well as design
+                                something that would be fairly extensible in the
+                                future (eg. to implement DirectX support).</p>
+
+                                <p>The engine can render fairly simple scenes
+                                with lighting & shading enabled. For shadows it
+                                uses shadowmaps, but also includes a phong
+                                reflection model to render surface reflections.
+                                All of the rendering is handled via a proper
+                                vertex and pixel shader pipeline with shaders
+                                written in GLSL.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>C++ | OpenGL | GLSL</b>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row project odd">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">pyPlatformer</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/pyplatformer">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-4">
+                                <img src="images/pyplatformer/screen01.png"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/pyplatformer/screen02.png"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Something I started working on in 2015 before &
+                                after starting my new position as a system
+                                assurance engineer at Imagination Technologies.
+                                The goal was to refresh my Python skill and have
+                                a go at writing a component-based game engine
+                                (Unity-style) rather than an inheritance based
+                                one. The latter was more of my area of expertise
+                                due to a few years of working with the Source
+                                Engine. For the media library handling system
+                                calls, rendering and input/output I used
+                                <a target="_blank"
+                                href="http://www.pygame.org">PyGame</a> and
+                                split the game into separate engine & game
+                                modules for easier code re-use. Thanks to <a
+                                target="_blank"
+                                href="https://github.com/bitcraft/PyTMX">PyTMX</a>
+                                levels can be built quickly using
+                                <a target="_blank"
+                                href="http://www.mapeditor.org/">Tiled</a> and
+                                imported straight into the game.
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>Python | PyGame</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row project even">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">Space Invaders</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-youtube btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                src="https://www.youtube.com/embed/0b2YECZobps">
+                                    <i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i>Video
+                                </a>
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/spaceinvaders">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-4">
+                                <img src="images/spaceinvaders/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/spaceinvaders/screen02.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>A clone of the classic Space Invaders arcade
+                                game, originally it was an interview challenge
+                                for a gamedev job I applied to in 2014. The goal
+                                was to build a fully working game in 7 days, but
+                                with enough abstraction to allow for easy
+                                plugging in of different implementations of the
+                                engine components (renderer, user interface
+                                manager etc.). For handling low level
+                                input/output and rendering calls I used
+                                    <a target="_blank"
+                                    href="https://www.sfml-dev.org/">SFML</a>
+                                </p>
+                                <p>Plus, it's Space Invaders, and who doesn't
+                                like Space Invaders!</p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>C++ | SFML</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div id="modding">
+                    <div class="row project odd">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">Valve's Source Engine
+                                Mod</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-default btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                target="_blank"
+                                href="http://www.moddb.com/mods/overlordess">
+                                    <i class="fa fa-external-link"
+                                    aria-hidden="true"></i>ModDB
+                                </a>
+                                <a class="btn btn-social btn-youtube btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                src="https://www.youtube.com/embed/Z7sUn8i8d4s">
+                                    <i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i>Video
+                                </a>
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/overlordess">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-4">
+                                <img src="images/eo/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/eo/screen02.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/eo/screen03.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>My first major C++ project started back in
+                                2008 while I was still in high school. It
+                                continued (with pauses) until 2012, when
+                                development effectively stopped until I cleaned
+                                it up before releasing as a perpetual alpha in
+                                2015 on
+                                    <a target="_blank"
+                                    href="http://www.moddb.com/mods/overlordess">ModDB</a>.</p>
+
+                                <p>Originally the mod was meant to be fairly
+                                simple - the players were tasked with solving
+                                puzzles, while one other player was supposed to
+                                randomise them by changing the puzzles on the
+                                fly. As development went on it turned into a
+                                full-blown Player vs Player modification pitting
+                                one team against a single player whose goal is
+                                to use traps & environmental hazards to stop
+                                anyone from finishing the level. The traps
+                                included suicidal, mechanical pigeons,
+                                exploding, flying orbs talking with my friend's
+                                voice and giant, human-eating blenders.</p>
+
+                                <p>While working on the mod I acted as a lead
+                                for a small team of 3D and 2D artists, while my
+                                responsibilities included all of the game
+                                design, level design, level creation and
+                                gameplay programming.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>C++ | Source Engine | Valve Hammer
+                                    Editor</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row project even">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">Manhunt - Arma 3
+                                mission</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-default btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                target="_blank"
+                                href="https://steamcommunity.com/sharedfiles/filedetails/?id=786699049">
+                                    <i class="fa fa-external-link"
+                                    aria-hidden="true"></i>Steam Workshop
+                                </a>
+                                <a class="btn btn-social btn-youtube btn-sm
+                                pull-right" style="margin-left: 5px;"
+                                src="https://www.youtube.com/embed/bhCr1J3QqeE">
+                                    <i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i>Video
+                                </a>
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/manhunt">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-4">
+                                <img src="images/manhunt/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/manhunt/screen02.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="images/manhunt/screen03.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>My gaming group started running into issues
+                                where we couldn't find any Player vs Player
+                                scenarios designed for our group's size - which
+                                is about 4-6 people playing at a time.
+                                Disappointed I figured the best around this is
+                                to write my own mission instead.</p>
+                                <p>Manhunt pits a small group of players - the
+                                Hunted - against a much larger enemy team - the
+                                Hunters. The smaller team has to sneak through
+                                the island, accomplish objectives (usually those
+                                involve just getting to a specific place), and
+                                finally extract via a helicopter. Their
+                                opponents have access to light vehicles,
+                                helicopters and are constantly being informed
+                                about the rough are where to look. This means
+                                that the Hunted have to be careful about the
+                                path they choose through the island, as well as
+                                have to make choices about sacrificing stealth
+                                in favour of speed.
+                                </p>
+                                <p>
+                                    Countless evenings were lost playing this
+                                    game mode, and even more trying to fix
+                                    various gameplay issues or fighting Bohemia
+                                    Interactive's SQF syntax. In the end I
+                                    decided to share the mission via
+                                    <a target="_blank"
+                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=786699049">
+                                        the Steam Workshop
+                                    </a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>SQF | Arma 3 Eden Editor</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row project odd">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h2 class="project-header">Scavenger - Arma 3
+                                mission</h2>
+                            </div>
+                            <div class="col-xs-7">
+                                <a class="btn btn-social btn-github btn-sm
+                                pull-right" target="_blank"
+                                href="https://github.com/mtusnio/scavenger">
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="row project-images">
+                            <div class="col-xs-4"></div>
+                            <div class="col-xs-4">
+                                <img src="images/scavenger/screen01.jpg"
+                                class="img-responsive img-thumbnail
+                                center-block" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>An early prototype that never received a
+                                proper test run. As a follow up to Manhunt I
+                                decided to try a more symmetric Player vs Player
+                                approach, but with AI added to the mix to
+                                balance the lack of human opponents. The mission
+                                is still geared towards groups of 4-6 players.
+                                </p>
+                                <p>Players are evenly split between two teams,
+                                both are tasked with recovering briefcases from
+                                the city of Vorkuta. The city, however, is
+                                occupied by AI which patrols the streets and
+                                positions snipers on the roofs. The players have
+                                to either deal with the AI guards, or sneak past
+                                them whenever possible. This also means that
+                                running into the opposing team might require
+                                holding fire and cooperating to avoid mutually
+                                assured deaths.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row footnote">
+                            <div class="col-md-12 text-center
+                            pagination-centered">
+                                <span>
+                                    <b>SQF | Arma 3 Eden Editor</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                function displayModal(content) {
+                    $('#enlargeImageModal .modal-body').empty();
+                    $('#enlargeImageModal .modal-body').append(content);
+                    $('#enlargeImageModal').modal('show');
+                }
+                $('img').on('click', function () {
+                    const src = $(this).attr('src');
+                    displayModal('<a target="_blank" href="' + src + '"><img src="' + src +
+                        '" class="enlargeImageModalSource" style="width: 100%;"></a>');
+                });
+
+                $('.btn-youtube').on('click', function () {
+                    const src = $(this).attr('src');
+                    displayModal(
+                        '<div class="embed-responsive embed-responsive-16by9">' +
+                        '<iframe class="embed-responsive-item" src="' + src +
+                        '" allowfullscreen></iframe>' +
+                        '</div>');
+                });
+
+                $('#cv-button').on('click', function () {
+                    const src = $(this).attr('src');
+                    displayModal(
+                        '<object data="' + src +
+                        '" type="application/pdf" width="100%" height="800px">' +
+                        '<p>Your browser does not support embedding PDF files. ' +
+                        '<a href="' + src + '">Click here to download the PDF file.</a></p>' +
+                        '</object></div>');
+                });
+
+                $('#enlargeImageModal').on('hidden.bs.modal', function () {
+                    $("#enlargeImageModal .embed-responsive iframe").attr('src', "");
+                })
+            });
+            var selectMenu = function () {
+                var sections = ["embedded", "webdev", "gamedev", "modding"];
+
+                var halfPage = $(window).height() / 2 + $("nav").height();
+                for (var i = 0; i < sections.length; i++) {
+                    var x = sections[i];
+                    var bounds = document.getElementById(x).getBoundingClientRect();
+                    if (halfPage >= bounds.top && halfPage <= bounds.bottom) {
+                        for (var k = 0; k < sections.length; k++) {
+                            $("#" + sections[k] + "-menu").removeClass("active");
+                        }
+                        if (!$("#" + x + "-menu").hasClass("active")) {
+                            $("#" + x + "-menu").addClass("active");
+                        }
+                        break;
+                    }
+                }
+            };
+            var scrollToHref = function (e) {
+                e.preventDefault();
+                var element_id = $($(this).attr('href'));
+                var navbar_offset = $("nav").height();
+                $('html, body').animate({
+                    scrollTop: $(element_id).offset().top - navbar_offset
+                }, 500);
+                return false;
+            };
+
+            $(".navbar-nav li a").click(scrollToHref);
+            $(".navbar-brand").click(scrollToHref);
+
+            $(window).ready(selectMenu);
+            $(window).scroll(selectMenu);
+        </script>
+</body>
+
+</html>
